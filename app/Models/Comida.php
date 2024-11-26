@@ -7,11 +7,14 @@ namespace App\Models;
 use DateTime;
 
 class Comida extends Producto {
-    private DateTime $caducidad;
 
-    public function __construct(string $nombre, float $precio, DateTime $caducidad) {
+    public function __construct(
+        protected string $nombre, 
+        protected float $precio, 
+        private DateTime $caducidad
+        ) 
+    {
         parent::__construct($nombre, $precio);
-        $this->caducidad = $caducidad;
     }
     
     public function mostrarDescripcion():void{

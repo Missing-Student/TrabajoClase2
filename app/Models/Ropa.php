@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace App\Models;
 
 class Ropa extends Producto {
-    private string $talla;
 
-    public function __construct(string $nombre, float $precio, string $talla) {
+    public function __construct(
+        protected string $nombre, 
+        protected float $precio, 
+        private string $talla
+        ) 
+    {
         parent::__construct($nombre, $precio);
-        $this->talla = $talla;
     }
     
     public function mostrarDescripcion():void{

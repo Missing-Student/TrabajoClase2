@@ -9,17 +9,15 @@ use App\Traits\Descuento;
 
 abstract class Producto implements VendibleInterface {
     use Descuento;
-    
-    private string $id;
-    private string $nombre;
-    private float $precio;
 
     public const IVA = 0.21;
 
-    public function __construct (string $nombre, float $precio) {
-        $id = uniqid();
-        $this->nombre = $nombre;
-        $this->precio = $precio;
+    public function __construct (
+        private string $id = uniqid(),
+        protected string $nombre,
+        protected float $precio
+        ) 
+    {
     }
 
     abstract public function mostrarDescripcion(): void;

@@ -5,7 +5,12 @@ declare(strict_types=1);
 namespace App\Models;
 
 class Carrito {
-    private array $productos = [];
+
+    public function __construct(
+        private array $productos = []
+        )
+    {
+    }
 
     public function agregarProducto(Producto $producto):void {
         $this->productos[] = $producto;
