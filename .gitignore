@@ -1,0 +1,41 @@
+# Archivos del entorno local y configuraciones del sistema
+*.log
+*.env
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de IDEs/editores
+.idea/
+.vscode/
+
+# Carpetas generadas automáticamente
+vendor/
+node_modules/
+
+# Archivos comprimidos o binarios
+*.zip
+*.rar
+*.tar.gz
+
+# Archivos de caché de PHP
+*.cache
+*.phpunit.result.cache
+
+# Archivos relacionados con el despliegue
+.env.local
+.env.production
+
+# Archivos específicos de XAMPP
+*.bak
+*.sql
+
+# Ficheros temporales del sistema operativo
+*.tmp
+*.swp
+
+# Git excluye archivos específicos de Git mismo
+.git/
+
+# Excluir carpetas de sesiones o caché en el proyecto
+sessions/
+cache/

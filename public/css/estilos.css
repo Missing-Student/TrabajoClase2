@@ -1,0 +1,362 @@
+/*Import de Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+/**/
+/*404*/
+.error404 {
+  /*Fondo*/
+  background-image: url("../img/404.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /**/
+}
+/**/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  /*Colocación*/
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  /**/
+  /*Fuente*/
+  font-weight: 600;
+  font-size: 20px;
+  /**/
+}
+
+/*Header*/
+.header {
+  /*Colocación*/
+  grid-area: header;
+  display: grid;
+  /**/
+  /*Fondo*/
+  background-color: rgba(0, 0, 0, 0.6);
+  /**/
+}
+.logo {
+  /*Colocación*/
+  grid-area: logo;
+  /**/
+  /*Fondo*/
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /**/
+}
+.logo:hover {
+  /*Animaciones*/
+  transition: all 0.5s;
+  /**/
+  /*Fondo*/
+  background-image: url("../img/logo_invertido.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /**/
+}
+.nav {
+  /*Colocación*/
+  grid-area: nav;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /**/
+  /*Fondo*/
+  background-color: rgba(0, 0, 0, 0.4);
+  /**/
+}
+.nav a {
+  /*Colocación*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*Fuente*/
+  columns: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  /**/
+  /*Tamaño*/
+  width: 100%;
+  height: 100%;
+  /**/
+  /*Fondo*/
+  background-color: transparent;
+  /**/
+}
+.nav a:hover {
+  /*Fondo*/
+  background-color: grey;
+  /**/
+  /*Fuente*/
+  font-size: 1.5em;
+  /**/
+  /*Bordes*/
+  border: 1px solid #fff;
+  /**/
+  /*Animaciones*/
+  transition: all 0.2s;
+  /**/
+}
+/**/
+/*Main*/
+.main {
+  /*Colocación*/
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /**/
+  /*Fondo*/
+  background-color: #a7a7a7;
+  /**/
+}
+.login {
+  /*Colocación*/
+  text-align: center;
+  /**/
+  /*Tamaño*/
+  width: 420px;
+  /**/
+  /*Fondo*/
+  background-color: rgba(0, 0, 0, 0.6);
+  /**/
+  /*Fuente*/
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  /**/
+  /*Bordes*/
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+  /**/
+  /*Márgenes y padding*/
+  padding: 30px 40px;
+  /**/
+}
+.login h1 {
+  /*Fuente*/
+  font-size: 36px;
+  /**/
+}
+.field {
+  /*Colocación*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /*Tamaño*/
+  width: 100%;
+  height: 50px;
+  /**/
+  /*Márgenes y padding*/
+  margin: 25px 0;
+  /**/
+}
+.field select {
+  /*Tamaño*/
+  width: 100%;
+  height: 100%;
+  /**/
+  /*Fondo*/
+  background: transparent;
+  /**/
+  /*Bordes*/
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  /**/
+  /*Fuente*/
+  font-size: 16px;
+  color: #fff;
+  /**/
+  /*Márgenes y padding*/
+  margin-left: 10px;
+  /**/
+}
+.field input {
+  /*Tamaño*/
+  width: 100%;
+  height: 100%;
+  /**/
+  /*Fondo*/
+  background: transparent;
+  /**/
+  /*Bordes*/
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  /**/
+  /*Fuente*/
+  font-size: 16px;
+  padding: 20px;
+  color: #fff;
+  /**/
+  /*Márgenes y padding*/
+  margin-left: 10px;
+  /**/
+}
+.field input::placeholder {
+  /*Fuente*/
+  color: #fff;
+  /**/
+}
+.btn {
+  /*Colocación*/
+  display: inline-block;
+  text-align: center;
+  /**/
+  /*Tamaño*/
+  width: 40%;
+  height: 2em;
+  /**/
+  /*Fondo*/
+  background-color: #4eb5f1;
+  /**/
+  /*Bordes*/
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2em;
+  /**/
+  /*Fuente*/
+  color: #ffffff;
+  font-size: 1.5em;
+  /**/
+  /*Márgenes y padding*/
+  padding: 0.3em;
+  margin: 0.5em;
+  /**/
+  /*Animaciones*/
+  transition: all 0.2s;
+  /**/
+}
+.btn:hover {
+  /*Fondo*/
+  background-color: #4095c6;
+  /**/
+}
+.new_account {
+  /*Márgenes y padding*/
+  margin: 0.5em;
+  /**/
+}
+.new_account a {
+  /*Fuente*/
+  color: #4eb5f1;
+  text-decoration: none;
+  /**/
+  /*Animaciones*/
+  transition: all 0.2s;
+  /**/
+}
+.new_account a:hover {
+  /*Fuente*/
+  color: #4095c6;
+  /**/
+}
+/**/
+/*Footer*/
+.footer {
+  /*Colocación*/
+  grid-area: footer;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "f1 f2 f3";
+  /**/
+  /*Fondo*/
+  background-color: rgba(0, 0, 0, 0.6);
+  /**/
+}
+.contenido_footer {
+  /*Colocación*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /**/
+  /*Fuente*/
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  /**/
+  /*Fondo*/
+  background-color: rgba(0, 0, 0, 0.4);
+  /**/
+}
+.contenido_footer p {
+  /*Fuente*/
+  font-size: 0.8em;
+  /**/
+  /*Margenes y padding*/
+  margin: 0.5em;
+  /**/
+}
+.f1 {
+  /*Colocación*/
+  grid-area: f1;
+  /**/
+}
+.f2 {
+  /*Colocación*/
+  grid-area: f2;
+  /**/
+}
+.f3 {
+  /*Colocación*/
+  grid-area: f3;
+  /**/
+}
+/**/
+@media only screen and (min-width: 768px) {
+  .container {
+    height: 100vh;
+    grid-template-rows: 80px 1fr 80px;
+  }
+  .header {
+    /*Colocación*/
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "logo nav nav nav nav";
+    /**/
+  }
+  .login {
+    margin: 5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    height: 100dvh;
+    grid-template-rows: 1fr 1fr 2.5em;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .header {
+    /*Colocación*/
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "nav";
+    /**/
+  }
+  .nav {
+    /*Colocación*/
+    flex-direction: column;
+    /**/
+  }
+  .nav a {
+    margin: 0.5rem;
+  }
+  .login {
+    margin: 2rem;
+  }
+}
