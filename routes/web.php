@@ -10,10 +10,9 @@ $requestProcesada = $requestArray[0];
 
 // Lista blanca de rutas permitidas
 $allowed_routes = [
-    '/' => 'login.php',
-    '/bienvenida' => 'bienvenida.php',
-    '/registro' => 'registro.php',
-    '/cerrarsesion' => 'cerrarsesion.php'
+    '/' => 'home.php',
+    '/catalogo' => 'catalogo.php',
+    '/carrito' => 'carrito-view.php'
 ];
 
 /*Comprobamos si la URL que aporta el usuario coincide con alguna de las claves que se encuentran en el array anterior. Si coinciden, se 
